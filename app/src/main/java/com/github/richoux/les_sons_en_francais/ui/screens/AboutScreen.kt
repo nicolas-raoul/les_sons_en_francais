@@ -82,9 +82,10 @@ fun AboutScreen(
                 onAboutClicked = onAboutClicked
             )
         },
-        content = {
+        content = { paddingValues ->
             LazyColumn(
                 modifier = Modifier
+                    .padding(paddingValues)
                     .padding(25.dp)
                     .fillMaxSize(),
                 horizontalAlignment = Alignment.Start,
